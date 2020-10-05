@@ -7,4 +7,4 @@
 
 4、那些公司正在用openresty？很多用openresty的公司都觉得自己是孤独是使用者，其实不然，据我所知openresty在京东，阿里，360，百度，海康威视等公司都有使用。
 
-5、openresty 相关教程。[lua教程](https://www.bilibili.com/video/BV1H4411b7o9?p=1) [openresty简介](https://www.bilibili.com/video/BV1S4411d7rx?from=search&seid=1245851150900242422)
+5、openresty 相关教程。[lua教程](https://www.bilibili.com/video/BV1H4411b7o9?p=1) , [openresty简介](https://www.bilibili.com/video/BV1S4411d7rx?from=search&seid=1245851150900242422), [极客时间](https://time.geekbang.org/search?q=openresty)
