@@ -1,4 +1,4 @@
-local env = require("vendor.utils.env")
+local env = require("config")
 local memcache = require('vendor.Memcache')
 local _M = {}
 

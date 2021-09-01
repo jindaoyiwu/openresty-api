@@ -1,11 +1,10 @@
 local helper = require("vendor.utils.helper")
-local jsonSafe = require("cjson.safe")
 local _E = {
-    path = "/www/php/lapis/.env",
+    path = "",
 }
 
 function _E:load()
-    local filename = self.path
+    local filename = self.path.."/.env"
     local data = {}
     local file = io.open(filename, "r")
     for line in file:lines() do
@@ -29,6 +28,10 @@ end
 function _E:get(key)
     local result = self:load()
     return result[key]
+end
+
+function _E:setPath(path)
+    _E.path = path
 end
 
 return _E

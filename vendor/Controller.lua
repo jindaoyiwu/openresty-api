@@ -3,7 +3,7 @@ local pairs = pairs
 
 local _A = {
     jsonSafe = require("cjson.safe"),
-    env = require("vendor.utils.env"),
+    env = require("config"),
     helper = require("vendor.utils.helper"),
     apisUtil = require("lapis.util"),
     validate = require("lapis.validate"),

@@ -32,7 +32,7 @@ function api:route(app)
     end)
 
     app:get("/", function()
-        return "Welcome to Lapis112221 " .. env:get("DOCUMENT_PATH");
+        return "Welcome to Lapis112221 ";
     end)
 end
 return api

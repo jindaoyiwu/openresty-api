@@ -42,7 +42,7 @@ function _C:testMysql()
     local db = self.mysql:instance()
     local res1 = db.query("SELECT * FROM test")
     local res2 = db.query("UPDATE test SET name = ?", "blue")
-    local res3 = db.query("INSERT INTO test (id, name) VALUES (?, ?)", 25, "dogman")
+    --local res3 = db.query("INSERT INTO test (id, name) VALUES (?, ?)", 25, "dogman")
     return self:success({ res1 = res1, res3 = res3, res2 = res2 })
 end
 

@@ -1,4 +1,4 @@
-local env = require("vendor.utils.env")
+local env = require("config")
 local redis = require('vendor.RedisCluster')
 local _M = {}
 
