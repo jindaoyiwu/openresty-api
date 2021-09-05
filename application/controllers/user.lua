@@ -6,6 +6,11 @@ function _C:register()
         { "phone", exists = true, min_length = 11, max_length = 11 },
         { "password", exists = true, min_length = 6, max_length = 20 },
     })
+    local user = {}
+    user['password'] = self.helper.sha1(self['lc'].params.password)
+    user['phone'] = self['lc'].params.phone
+
+    userModel:queryUserByPhone(user['phone'])
     local redis = self.redis:instance()
     local _,error = redis:get("user_lock")
 
@@ -13,9 +18,7 @@ function _C:register()
         redis:set("user_lock", 1)
     end
     local userLock, _ = redis:incr("user_lock")
-    local user = {}
-    user['password'] = self.helper.sha1(self['lc'].params.password)
-    user['phone'] = self['lc'].params.phone
+
     local token = user['phone']..userLock
     user['token'] = self.helper.sha1(token)
     local res = userModel:register(user)
