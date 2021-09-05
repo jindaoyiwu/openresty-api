@@ -12,7 +12,7 @@
 6、本框架该如何使用？
 
     ①、本框架糅合了lapis(一个知名的lua框架)，在lapi的基础上重新封装，使开发更加简单，便捷。
-    ②、如果使用docker，将更加简便。[docker镜像](https://registry.hub.docker.com/repository/docker/jindaoyiwu/openresty-lapis),因为该镜像中不仅包含了lapis还包含了redis-cluster连接组件。如果不使用该镜像，则需要手动安装lapis和redis-cluster组件。
+    ②、如果使用docker，将更加简便。[docker镜像](https://registry.hub.docker.com/repository/docker/jindaoyiwu/openresty-lapis),因为该镜像中不仅包含了lapis还包含了redis-cluster连接组件。如果不使用该镜像，则需要手动安装lapis和[redis-cluster](https://github.com/jindaoyiwu/resty-redis-cluster)组件。
     ③、nginx 配置
         server
         {

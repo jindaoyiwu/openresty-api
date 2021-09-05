@@ -14,7 +14,7 @@
 
 	① This framework combines Lapis (a well-known Lua framework) and re encapsulates it on the basis of lapi, making the development more simple and convenient.
 
-	② if docker is used, it will be easier[ Docker image]（ https://registry.hub.docker.com/repository/docker/jindaoyiwu/openresty-lapis ）, because the image contains not only Lapis but also redis cluster connection components. If you do not use this image, you need to manually install Lapis and redis cluster components.
+	② if docker is used, it will be easier[ Docker image]（ https://registry.hub.docker.com/repository/docker/jindaoyiwu/openresty-lapis ）, because the image contains not only Lapis but also redis cluster connection components. If you do not use this image, you need to manually install Lapis and [redis-cluster](https://github.com/jindaoyiwu/resty-redis-cluster) components.
 
 	③ nginx configuration
 
